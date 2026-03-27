@@ -1,6 +1,14 @@
 # AI-Powered Elder Care Platform
 
-A full-stack AI-driven system designed to support elderly users through voice interaction, reminders, document management, and real-time assistance.
+AI-Powered Healthcare Compliance System (GRC-Aligned)
+System designed to support secure data handling, audit logging, and compliance workflows aligned with HIPAA and GRC principles.
+
+# GRC Capabilities Demonstrated
+Audit logging for user activity tracking
+Role-based access control (RBAC)
+Secure data handling (local processing)
+System monitoring and error handling
+Compliance-aligned architecture design
 
 ## 🚀 Key Features
 - Voice-enabled interaction (STT + TTS)
