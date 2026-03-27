@@ -1,22 +1,21 @@
 # AI-Powered Elder Care Platform
 
-AI-Powered Healthcare Compliance System (GRC-Aligned)
-System designed to support secure data handling, audit logging, and compliance workflows aligned with HIPAA and GRC principles.
+This project demonstrates the design of a healthcare-focused system aligned with Governance, Risk, and Compliance (GRC) principles, including secure data handling, audit logging, and access control.
 
 # GRC Capabilities Demonstrated
-Audit logging for user activity tracking
-Role-based access control (RBAC)
-Secure data handling (local processing)
-System monitoring and error handling
-Compliance-aligned architecture design
+-Audit logging for user activity tracking
+-Role-based access control (RBAC) structure
+-Secure handling of sensitive healthcare data
+-System monitoring and error handling
+-Compliance-aligned architecture design
 
 ## 🚀 Key Features
-- Voice-enabled interaction (STT + TTS)
-- AI-powered knowledge assistant
-- Medication and calendar reminders
-- Document upload and management
-- Admin dashboard and audit logging
-- PWA support (installable web app)
+-Voice-enabled interaction (STT + TTS)
+-AI-powered knowledge assistant
+-Medication and calendar reminders
+-Document upload and management
+-Admin dashboard with audit logging
+-Offline-capable PWA
 
 ## 🛠 Tech Stack
 - Python (Flask, Streamlit)
