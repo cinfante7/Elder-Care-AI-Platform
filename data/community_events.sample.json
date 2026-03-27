@@ -1,0 +1,15 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Bingo Night",
+      "description": "Weekly bingo game with prizes",
+      "day": "Friday",
+      "time": "19:00",
+      "location": "Community Center",
+      "recurrence": "weekly",
+      "status": "active"
+    }
+  ],
+  "next_id": 2
+}

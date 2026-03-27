@@ -1,0 +1,13 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Doctor Appointment",
+      "date": "2026-04-01",
+      "time": "10:00",
+      "datetime": "2026-04-01 10:00",
+      "status": "upcoming"
+    }
+  ],
+  "next_id": 2
+}

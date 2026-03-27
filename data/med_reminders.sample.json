@@ -1,0 +1,14 @@
+{
+  "reminders": [
+    {
+      "id": 1,
+      "med_name": "Sample Medication",
+      "time": "09:00",
+      "recurrence": "daily",
+      "note": "Take with water",
+      "status": "pending",
+      "timestamp": null
+    }
+  ],
+  "next_id": 2
+}

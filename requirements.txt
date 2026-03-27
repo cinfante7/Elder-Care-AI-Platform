@@ -1,0 +1,10 @@
+streamlit
+pandas
+speechrecognition
+vosk
+sounddevice
+pyttsx3
+requests
+python-dotenv
+gunicorn
+flask
