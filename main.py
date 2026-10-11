@@ -86,24 +86,24 @@ if st.session_state.user:
             logout()
             st.rerun()
     
-    # === Emergency Alert System ===
-    st.header("🚨 Emergency Alert System")
-    if st.button("Trigger Emergency Alert"):
+    # === Emergency Simulation — No Services Contacted ===
+    st.header("🚨 Emergency Simulation — No Services Contacted")
+    if st.button("Simulate Emergency Alert"):
         st.session_state.pending_emergency = True
-        st.warning("Emergency alert triggered! Please confirm.")
+        st.warning("Simulation pending. No emergency services have been contacted.")
     
     if st.session_state.pending_emergency:
-        st.warning("Emergency alert is pending confirmation!")
+        st.warning("Confirm this simulation only. No emergency services have been contacted.")
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("Confirm Emergency"):
-                # Here you would implement the actual emergency response
-                st.error("EMERGENCY ALERT SENT! Emergency services have been notified.")
+            if st.button("Confirm Simulation"):
+                # Simulation only: no external emergency response integration.
+                st.error("Simulation confirmed. No emergency services have been contacted. For a real emergency, call your local emergency number.")
                 st.session_state.pending_emergency = False
         with col2:
-            if st.button("Cancel Emergency"):
+            if st.button("Cancel Simulation"):
                 st.session_state.pending_emergency = False
-                st.success("Emergency alert canceled.")
+                st.success("Simulation canceled. No emergency services have been contacted.")
 
 # === Add viewport meta tag for mobile responsiveness ===
 st.markdown("""
@@ -190,7 +190,7 @@ with st.sidebar:
         </div>
     """, unsafe_allow_html=True)
 
-    if st.button("🚨 Trigger Emergency Now"):
+    if st.button("🚨 Simulate Emergency Now"):
         st.session_state.pending_emergency = True
 
     st.markdown("""
@@ -284,6 +284,7 @@ if st.session_state.user_type == "admin":
         st.markdown("### 📊 System Usage Overview")
         
         # Mock resident data for demonstration
+        st.caption("Synthetic demonstration metrics; not actual residents or measured service activity.")
         st.markdown("#### Active Residents")
         resident_data = {
             "Total Residents": 45,
@@ -313,6 +314,7 @@ if st.session_state.user_type == "admin":
         
         st.markdown("### 📈 Usage Statistics")
         # Mock data for demonstration
+        st.caption("Synthetic demonstration charts; not measured usage or participation.")
         chart_data = pd.DataFrame({
             'Day': ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
             'Voice Interactions': [15, 23, 18, 31, 28, 12, 8],
@@ -578,7 +580,7 @@ else:
                                     # Process with AI
                                     if "i need help" in recording['text'].lower():
                                         st.session_state.pending_emergency = True
-                                        ai_response = "🚨 Emergency alert has been triggered based on your recording."
+                                        ai_response = "🚨 Simulation pending from your recording. No emergency services have been contacted."
                                     elif is_retrieval_request(recording['text']):
                                         # Enhanced conversation recall for voice recordings
                                         import re
@@ -1018,18 +1020,18 @@ else:
 
 # === Emergency confirmation ===
 if st.session_state.pending_emergency:
-    st.warning("🚨 Do you really want to trigger an emergency alert?")
+    st.warning("🚨 Simulate an alert? No emergency services will be contacted.")
     col1, col2 = st.columns([1, 1])  # Equal ratio for mobile
     with col1:
-        if st.button("Yes, I need help!"):
+        if st.button("Confirm simulation only"):
             message = trigger_emergency()
             st.session_state.history.append({"role": "System", "text": message})
-            speak("Emergency alert triggered. Help is on the way.")
+            speak("Simulation only. No emergency services have been contacted. For a real emergency, call your local emergency number.")
             st.session_state.pending_emergency = False
     with col2:
         if st.button("Cancel"):
             st.session_state.pending_emergency = False
-            st.success("Emergency alert canceled.")
+            st.success("Simulation canceled. No emergency services have been contacted.")
 
 
 # === Run Flask app in a separate thread ===

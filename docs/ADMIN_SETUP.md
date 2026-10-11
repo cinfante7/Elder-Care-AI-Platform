@@ -1,3 +1,5 @@
+> Prototype setup reference only. Authentication uses demo patterns; dashboard figures are synthetic. Emergency actions do not contact services. Runtime setup and role enforcement are unverified. Use synthetic content only; see [control evidence](CONTROL_EVIDENCE.md).
+
 # 🏢 Facility Administration Setup Guide
 
 ## Overview

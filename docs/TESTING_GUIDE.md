@@ -1,3 +1,5 @@
+> Historical test plan, not execution evidence. Checklist items remain unchecked. Credential examples and paths may be stale; do not test credentials or use this guide against live systems. See [current safe validation scope](VALIDATION.md). No checks were executed by this documentation pass.
+
 # Elder Assistant System - Comprehensive Testing Guide
 ## Phase: Full Testing & Stakeholder Feedback (August 13-19, 2025)
 
